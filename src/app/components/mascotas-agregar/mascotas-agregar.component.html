@@ -1,0 +1,30 @@
+<!-- bindear el metodo handleSubmit -->
+<form [formGroup]="mascotaForm"> 
+    <div>
+        <label for="nombre">Nombre</label>
+        <br />
+        <input type="text" name="nombre"id="nombre" formControlName="nombre">
+    </div>
+    <div>
+        <label for="tipo">Tipo</label>
+        <br />
+        <input type="text" name="tipo"id="tipo" formControlName="tipo">
+    </div>
+    <div>
+        <label for="edad">Edad</label>
+        <br />
+        <input type="text" name="edad"id="edad"formControlName="edad">
+    </div>
+    <div>
+        <label for="descripcion">Descripcion</label>
+        <br />
+        <input type="text" name="descripcion"id="descripcion"formControlName="descripcion">
+    </div>
+    <div>
+            <button class="btn btn-primary">Agregar</button>
+    </div>
+    
+    <!-- 
+        boton que haga el submit
+     -->
+</form>

@@ -10,21 +10,25 @@ import { MascotasService } from './mascotas.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MascotasListarComponent } from './mascotas-listar/mascotas-listar.component';
 
+import { MascotasAgregarComponent } from './components/mascotas-agregar/mascotas-agregar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    MascotasListarComponent
-    
+    MascotasListarComponent,
+    MascotasAgregarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [MascotasService],
   bootstrap: [AppComponent]
