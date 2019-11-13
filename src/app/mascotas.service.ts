@@ -15,6 +15,10 @@ export class MascotasService {
     
     }
 
+    public addMascota(mascota: Mascota){
+      return this.httpClient.post<Mascota>(`${this.baseUrl}`,mascota);
+    }
+
   constructor(private httpClient: HttpClient) { } 
 
 }
