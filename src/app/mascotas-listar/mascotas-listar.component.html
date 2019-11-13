@@ -1,21 +1,26 @@
 <h1>Mascotas para adoptar</h1>
 <button class="btn btn-primary" routerLink="/mascotas-agregar" >agregar mascota</button>
 
-<table class ="table">
+<table class ="table"style="text-align:center;">
     <thead>
 <tr>
     <th>Nombre</th>
     <th>Tipo</th>
     <th>Edad</th>
     <th>Descripcion</th>
+    <th>Acciones</th>
+
 </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of mascotas">  
-           <td class="left">{{item.nombre}}</td>
-           <td class="left">{{item.tipo}}</td>
-           <td class="left">{{item.edad}}</td>
-           <td class="left">{{item.descripcion}}</td>
+        <tr *ngFor="let item of mascotas" >  
+           <td >{{item.nombre}}</td>
+           <td >{{item.tipo}}</td>
+           <td >{{item.edad}}</td>
+           <td >{{item.descripcion}} </td>
+           <td><button type="button" class="btn btn-icon" aria-label="home" [routerLink]="['/mascotas-editar', item.id]">
+            <clr-icon shape="pencil" ></clr-icon>
+        </button></td>
         </tr>
     </tbody>
 </table>
