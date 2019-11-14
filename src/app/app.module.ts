@@ -16,13 +16,15 @@ import { MascotasEditarComponent } from './components/Mascotas/mascotas-editar/m
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     MascotasListarComponent,
     MascotasAgregarComponent,
-    MascotasEditarComponent
+    MascotasEditarComponent,
+
   ],
   imports: [
     BrowserModule,

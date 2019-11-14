@@ -30,7 +30,7 @@
 
 <div>
        <br/> 
-       <button class="btn btn-success" type="submit" >modificar</button>
+       <button class="btn btn-success" type="submit"[disabled]="!mascotaForm.valid" >modificar</button>
         
         <button class="btn btn-info" (click)='cancelar($event)'>Cancelar</button>
 </div>
