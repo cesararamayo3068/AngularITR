@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MascotasService } from '../mascotas.service';
-import { Mascota } from '../mascota';
+import { MascotasService } from '../shared/mascotas.service';
+import { Mascota } from '../shared/mascota';
 
 
 @Component({

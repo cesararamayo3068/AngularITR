@@ -24,4 +24,8 @@ export class MascotasService {
     } 
   constructor(private httpClient: HttpClient) { } 
 
+  public updateMascota (mascota: Mascota){
+    return this.httpClient.put<Mascota>(`${this.baseUrl}`,mascota);
+  }
+  
 }

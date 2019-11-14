@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MascotasService } from 'src/app/mascotas.service';
+import { MascotasService } from 'src/app/components/Mascotas/shared/mascotas.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
@@ -14,6 +14,7 @@ export class MascotasEditarComponent implements OnInit {
 
   constructor(private mascotasService: MascotasService,private route:ActivatedRoute,private router:Router) {
     this.mascotaForm = new FormGroup({
+      id: new FormControl (''),
       nombre: new FormControl('',[ Validators.required,Validators.pattern('[a-zA-Z ]*')]) ,   
       tipo: new FormControl('',[ Validators.required,Validators.pattern('[a-zA-Z ]*')]) ,   
       edad: new FormControl('',[ Validators.required,Validators.pattern("^[0-9]$|^[0-9][0-9]$|^[0-9][0-9][0-9]$"), Validators.max(120),Validators.min(1)]) ,  
@@ -32,5 +33,9 @@ export class MascotasEditarComponent implements OnInit {
     this.router.navigate(['/mascotas-listar']);
   
   }
-
+  handleSubmit(){
+    this.mascotasService.updateMascota(this.mascotaForm.value).subscribe(data => {
+      this.router.navigate(['/mascotas-listar']);
+});
+  }
 }

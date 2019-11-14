@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {  Validators, FormGroup, FormControl } from '@angular/forms';
-import { MascotasService } from 'src/app/mascotas.service';
+import { MascotasService } from 'src/app/components/Mascotas/shared/mascotas.service';
 import { Router } from '@angular/router';
 
 @Component({

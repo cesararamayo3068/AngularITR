@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './inicio/inicio.component';
-import { MascotasService } from './mascotas.service';
+import { MascotasService } from './components/Mascotas/shared/mascotas.service';
 import { HttpClientModule } from '@angular/common/http';
-import { MascotasListarComponent } from './mascotas-listar/mascotas-listar.component';
+import { MascotasListarComponent } from './components/Mascotas/mascotas-listar/mascotas-listar.component';
 
-import { MascotasAgregarComponent } from './components/mascotas-agregar/mascotas-agregar.component';
+import { MascotasAgregarComponent } from './components/Mascotas/mascotas-agregar/mascotas-agregar.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MascotasEditarComponent } from './components/mascotas-editar/mascotas-editar.component';
+import { MascotasEditarComponent } from './components/Mascotas/mascotas-editar/mascotas-editar.component';
 
 
 
