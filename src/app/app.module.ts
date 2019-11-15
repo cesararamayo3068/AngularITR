@@ -13,6 +13,8 @@ import { MascotasListarComponent } from './components/Mascotas/mascotas-listar/m
 import { MascotasAgregarComponent } from './components/Mascotas/mascotas-agregar/mascotas-agregar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MascotasEditarComponent } from './components/Mascotas/mascotas-editar/mascotas-editar.component';
+import { MascotasAdoptarComponent } from './components/mascotas/mascotas-adoptar/mascotas-adoptar.component';
+import { MascotasCardComponent } from './components/mascotas/mascotas-card/mascotas-card.component';
 
 
 
@@ -24,6 +26,8 @@ import { MascotasEditarComponent } from './components/Mascotas/mascotas-editar/m
     MascotasListarComponent,
     MascotasAgregarComponent,
     MascotasEditarComponent,
+    MascotasAdoptarComponent,
+    MascotasCardComponent,
 
   ],
   imports: [

@@ -1,25 +1,25 @@
 <clr-main-container>
   <clr-header>
-    <div class="branding">
-       <a routerLink="inicio" class="nav-link">
-            <clr-icon shape="home"></clr-icon>
-            <span class="title">Refugio de animales el panda feliz</span>
-       </a>
-     </div>
+      <div class="branding">
+         <a routerLink="inicio" class="nav-link">
+               <clr-icon shape="home"></clr-icon>
+               <span class="title">Refugio de animales el panda feliz</span>
+         </a>
+      </div>
    </clr-header>
    <div class="content-container">
-      <main class="content-area">
-         <router-outlet></router-outlet>
-      </main>
+         <main class="content-area">
+            <router-outlet></router-outlet>
+         </main>
       <clr-vertical-nav [clrVerticalNavCollapsible]="true" class="nav-trigger--bottom" [clr-nav-level]="1">
-         <a clrVerticalNavLink routerLink="inicio" routerLinkActive="active">
-           <clr-icon clrVerticalNavIcon shape="house"></clr-icon>
+            <a clrVerticalNavLink routerLink="inicio" routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="house"></clr-icon>
               Inicio
-         </a>
-         <a clrVerticalNavLink routerLink="mascotas-listar" routerLinkActive="active">
-            <clr-icon clrVerticalNavIcon shape="piggy-bank"></clr-icon>
+            </a>
+            <a clrVerticalNavLink routerLink="mascotas-listar" routerLinkActive="active">
+               <clr-icon clrVerticalNavIcon shape="piggy-bank"></clr-icon>
                Mascotas
-          </a>
+            </a>
       </clr-vertical-nav>
     </div>
 </clr-main-container>

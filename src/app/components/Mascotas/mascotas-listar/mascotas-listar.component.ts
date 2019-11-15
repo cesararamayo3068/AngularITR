@@ -23,6 +23,7 @@ ngOnInit() {
 delete(id:number){
 this.mascotasService.deleteMascota(id).subscribe((data)=>{
   this.mascotasService.getMascotas().subscribe(data=> this.mascotas=data);
+ 
 })
 }
 

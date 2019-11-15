@@ -1,39 +1,45 @@
 <form clrForm [formGroup]="mascotaForm" (ngSubmit)="handleSubmit()">
     <h1>Editar mascota</h1>
-<clr-input-container>
+    <clr-input-container>
         <label>Nombre</label>
         <input clrInput type="text" name ="nombre" id="nombre " formControlName="nombre" />
         <clr-control-helper>Modificar Nombre de la mascota</clr-control-helper>
         <clr-control-error>error</clr-control-error>
-</clr-input-container>
+    </clr-input-container>
 
-<clr-input-container>
-    <label>Tipo</label>
-    <input clrInput type="text" name ="tipo" id="tipo " formControlName="tipo" />
-    <clr-control-helper>Modificar tipo de mascota</clr-control-helper>
-    <clr-control-error>error</clr-control-error>
-</clr-input-container>
+    <clr-input-container>
+        <label>Tipo</label>
+        <input clrInput type="text" name ="tipo" id="tipo " formControlName="tipo" />
+        <clr-control-helper>Modificar tipo de mascota</clr-control-helper>
+        <clr-control-error>error</clr-control-error>
+    </clr-input-container>
 
-<clr-input-container>
-    <label>Edad</label>
-    <input clrInput type="number" name ="edad" id="edad " formControlName="edad" />
-    <clr-control-helper>Modificar edad de mascota</clr-control-helper>
-    <clr-control-error>error</clr-control-error>
-</clr-input-container>
+    <clr-input-container>
+        <label>Edad</label>
+        <input clrInput type="number" name ="edad" id="edad " formControlName="edad" />
+        <clr-control-helper>Modificar edad de mascota</clr-control-helper>
+        <clr-control-error>error</clr-control-error>
+    </clr-input-container>
 
-<clr-input-container>
-    <label>Descripcion</label>
-    <input clrInput type="text" name ="descripcion" id="descripcion" size="50" formControlName="descripcion" />
-    <clr-control-helper>Modificar descripcion de mascota</clr-control-helper>
-    <clr-control-error>error</clr-control-error>
-</clr-input-container>
+    <clr-input-container>
+        <label>Descripcion</label>
+        <input clrInput type="text" name ="descripcion" id="descripcion" size="50" formControlName="descripcion" />
+        <clr-control-helper>Modificar descripcion de mascota</clr-control-helper>
+        <clr-control-error>error</clr-control-error>
+    </clr-input-container>
 
-<div>
+    <clr-input-container>
+            <label>Imagen</label>
+            <input clrInput type="text" name ="imagen" id="imagen" size="50" formControlName="imagen" />
+            <clr-control-helper>Ingrese url de la imagen de la mascota</clr-control-helper>
+            <clr-control-error>error</clr-control-error>
+    </clr-input-container>
+      
+    <div>
        <br/> 
        <button class="btn btn-success" type="submit"[disabled]="!mascotaForm.valid" >modificar</button>
-        
-        <button class="btn btn-info" (click)='cancelar($event)'>Cancelar</button>
-</div>
+       <button class="btn btn-info" (click)='cancelar($event)'>Cancelar</button>
+    </div>
 
 
 </form>

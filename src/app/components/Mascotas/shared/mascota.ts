@@ -5,5 +5,6 @@ tipo:String;
 
 edad:Number;
 descripcion:String;
+imagen:String;
 
 }

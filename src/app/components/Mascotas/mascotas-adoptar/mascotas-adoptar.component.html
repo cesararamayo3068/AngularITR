@@ -1,0 +1,12 @@
+<clr-accordion>
+  <h1>Mascotas para adoptar</h1>
+  <clr-accordion-panel *ngFor="let item of mascotas">
+    <clr-accordion-title>{{ item.nombre }}</clr-accordion-title>
+    <clr-accordion-content *clrIfExpanded>
+
+<app-mascotas-card [mascota]="item"></app-mascotas-card>
+
+         </clr-accordion-content>
+  </clr-accordion-panel>
+
+  

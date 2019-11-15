@@ -1,14 +1,14 @@
-<!-- bindear el metodo handleSubmit -->
-
-    <form clrForm [formGroup]="mascotaForm" (ngSubmit)="handleSubmit()">
+   <form clrForm [formGroup]="mascotaForm" (ngSubmit)="handleSubmit()">
         <h1>Agregar mascota para adopcion</h1>
+    
     <clr-input-container>
-            <label>Nombre</label>
-            <input clrInput type="text" name ="nombre" id="nombre " formControlName="nombre" />
-            <clr-control-helper>Ingrese Nombre de la mascota</clr-control-helper>
-            <clr-control-error>error</clr-control-error>
+        <label>Nombre</label>
+        <input clrInput type="text" name ="nombre" id="nombre " formControlName="nombre" />
+        <clr-control-helper>Ingrese Nombre de la mascota</clr-control-helper>
+        <clr-control-error>error</clr-control-error>
     </clr-input-container>
   
+
     <clr-input-container>
         <label>Tipo</label>
         <input clrInput type="text" name ="tipo" id="tipo " formControlName="tipo" />
@@ -22,20 +22,27 @@
         <clr-control-helper>Ingrese edad de mascota</clr-control-helper>
         <clr-control-error>error</clr-control-error>
     </clr-input-container>
-
+   
+    
     <clr-input-container>
         <label>Descripcion</label>
         <input clrInput type="text" name ="descripcion" id="descripcion" size="50" formControlName="descripcion" />
         <clr-control-helper>Ingrese descripcion de mascota</clr-control-helper>
         <clr-control-error>error</clr-control-error>
     </clr-input-container>
-
+     
+    <clr-input-container>
+        <label>Imagen</label>
+        <input clrInput type="text" name ="imagen" id="imagen" size="50" formControlName="imagen" />
+        <clr-control-helper>Ingrese url de la imagen de la mascota</clr-control-helper>
+        <clr-control-error>error</clr-control-error>
+    </clr-input-container>
+  
+   
     <div>
-           <br/> 
-           <button class="btn btn-primary" type="submit" [disabled]="!mascotaForm.valid">Agregar</button>
-            <button  class="btn btn-primary"(click)='limpiar($event)'>limpiar</button>
-            <button class="btn btn-info" (click)='cancelar($event)'>Cancelar</button>
+        <br/> 
+        <button class="btn btn-primary" type="submit" [disabled]="!mascotaForm.valid">Agregar</button>
+        <button  class="btn btn-primary"(click)='limpiar($event)'>limpiar</button>
+        <button class="btn btn-info" (click)='cancelar($event)'>Cancelar</button>
     </div>
-   
-   
 </form>

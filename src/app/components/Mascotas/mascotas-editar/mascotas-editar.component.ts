@@ -18,7 +18,8 @@ export class MascotasEditarComponent implements OnInit {
       nombre: new FormControl('',[ Validators.required,Validators.pattern('[a-zA-Z ]*')]) ,   
       tipo: new FormControl('',[ Validators.required,Validators.pattern('[a-zA-Z ]*')]) ,   
       edad: new FormControl('',[ Validators.required,Validators.pattern("^[0-9]$|^[0-9][0-9]$|^[0-9][0-9][0-9]$"), Validators.max(120),Validators.min(1)]) ,  
-      descripcion: new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z ]*')])  
+      descripcion: new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z ]*')]),
+      imagen: new FormControl('')
     })   
    }
 
